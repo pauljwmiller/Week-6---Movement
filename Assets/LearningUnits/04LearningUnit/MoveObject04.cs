@@ -17,4 +17,5 @@ public class MoveObject04 : MonoBehaviour
     {
         transform.position = transform.position;
     }
+    // Changed the mass of both cubes once again so only the blue one fell.
 }

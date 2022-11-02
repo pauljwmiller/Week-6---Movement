@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveObjectRB01 : MonoBehaviour
+public class Agitator : MonoBehaviour
 {
     Rigidbody rigidbody;
     [SerializeField] Vector3 moveDirection;
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody.AddForce(moveDirection, ForceMode.Impulse);
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        rigidbody.AddTorque(moveDirection, ForceMode.Force);
     }
 }

@@ -9,6 +9,13 @@ public class MoveObjectRB02 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< HEAD
+        rigidbody = GetComponent<Rigidbody>();
+=======
+        // Where does one find a rigidbody these days anyway?
+
+	    //rigidbody = rigidbody;
+>>>>>>> 14bf5864b8de3b31e75410e8928775f0b5c4552d
     }
 
     // Update is called once per frame

@@ -15,6 +15,7 @@ public class MoveObject02 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position;
+        transform.position = transform.position + moveDirection;
     }
+    // I don't remember exactly how I fixed this learning unit. Was this code not there at the start?
 }

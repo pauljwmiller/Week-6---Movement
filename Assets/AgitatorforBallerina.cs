@@ -1,21 +1,20 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveObject05 : MonoBehaviour
+public class AgitatorforBallerina : MonoBehaviour
 {
+    Rigidbody rigidbody;
     [SerializeField] Vector3 moveDirection;
     // Start is called before the first frame update
     void Start()
     {
-
+        rigidbody = GetComponent<Rigidbody>();
     }
-    
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position;
+        rigidbody.AddTorque(moveDirection, ForceMode.Force);
     }
-    // Unchecked is kinematic from the red cube to allow forces against it.
-}
+}*/

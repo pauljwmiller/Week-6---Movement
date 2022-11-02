@@ -17,4 +17,5 @@ public class MoveObject03 : MonoBehaviour
     {
         transform.position = transform.position;
     }
+    // Changed the masses of both cubes to make the scene work as intended.
 }
